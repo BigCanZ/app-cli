@@ -2,7 +2,7 @@
   <div>
     <div class="header">项目实践模板</div>
     <div class="app-wrapper">
-      <div class="title">layout page</div>
+      <div class="title">默认布局</div>
       <router-view></router-view>
     </div>
   </div>

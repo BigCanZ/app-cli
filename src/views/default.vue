@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="title">default page</div>
+    <div class="title">其他布局</div>
     <router-link class="btn" to="/">home</router-link>
   </div>
 </template>

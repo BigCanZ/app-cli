@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Layout from '@/Layout'
+VueRouter.prototype.goBack = function () {
+  window.history.go(-1)
+}
 /**
  * 正对3.0以上版本路由跳转返回promise,捕获异常处理控制台不报错
  */
@@ -13,8 +16,7 @@ Vue.use(VueRouter)
 export const constRoutes = [
   {
     path: '/default',
-    component: () => import('@/views/default'),
-    hidden: true
+    component: () => import('@/views/default')
   },
   {
     path: '/',
@@ -33,6 +35,10 @@ export const constRoutes = [
         }
       }
     ]
+  },
+  {
+    path: '/config',
+    component: () => import('@/views/Config')
   }
 ]
 
